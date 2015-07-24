@@ -1,9 +1,9 @@
 package revel
 
 import (
-	loader "github.com/evalphobia/revel-config-loader"
+	loader "github.com/cnry/revel-config-loader"
 
-	"github.com/evalphobia/aws-sdk-go-wrapper/config"
+	"github.com/cnry/aws-sdk-go-wrapper/config"
 )
 
 const (

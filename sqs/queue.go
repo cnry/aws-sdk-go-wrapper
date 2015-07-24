@@ -5,7 +5,7 @@ package sqs
 import (
 	AWS "github.com/aws/aws-sdk-go/aws"
 	SDK "github.com/aws/aws-sdk-go/service/sqs"
-	"github.com/evalphobia/aws-sdk-go-wrapper/log"
+	"github.com/cnry/aws-sdk-go-wrapper/log"
 
 	"encoding/json"
 	"errors"

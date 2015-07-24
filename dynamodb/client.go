@@ -8,9 +8,9 @@ import (
 
 	SDK "github.com/aws/aws-sdk-go/service/dynamodb"
 
-	"github.com/evalphobia/aws-sdk-go-wrapper/auth"
-	"github.com/evalphobia/aws-sdk-go-wrapper/config"
-	"github.com/evalphobia/aws-sdk-go-wrapper/log"
+	"github.com/cnry/aws-sdk-go-wrapper/auth"
+	"github.com/cnry/aws-sdk-go-wrapper/config"
+	"github.com/cnry/aws-sdk-go-wrapper/log"
 )
 
 const (

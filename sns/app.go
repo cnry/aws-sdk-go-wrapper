@@ -5,7 +5,7 @@ package sns
 import (
 	SDK "github.com/aws/aws-sdk-go/service/sns"
 
-	"github.com/evalphobia/aws-sdk-go-wrapper/log"
+	"github.com/cnry/aws-sdk-go-wrapper/log"
 )
 
 type SNSApp struct {

@@ -1,5 +1,5 @@
 [![Build Status](https://drone.io/github.com/evalphobia/aws-sdk-go-wrapper/status.png)](https://drone.io/github.com/evalphobia/aws-sdk-go-wrapper/latest)
-(checked SDK version [aws-sdk-go](https://github.com/awslabs/aws-sdk-go/) :: [v0.6.6](https://github.com/awslabs/aws-sdk-go/tree/v0.6.6) 
+(checked SDK version [aws-sdk-go](https://github.com/awslabs/aws-sdk-go/) :: [v0.6.6](https://github.com/awslabs/aws-sdk-go/tree/v0.6.6)
 
 [![Coverage Status](https://coveralls.io/repos/evalphobia/aws-sdk-go-wrapper/badge.svg?branch=master)](https://coveralls.io/r/evalphobia/aws-sdk-go-wrapper?branch=master)
 
@@ -8,7 +8,7 @@
 Simple wrapper for aws-sdk-go
 At this time, it suports services below,
 - `DynamoDB`
-- `S3` 
+- `S3`
 - `SQS`
 - `SNS`
 
@@ -30,33 +30,33 @@ vim aws.json
 
 ```go
 import (
-    "github.com/evalphobia/aws-sdk-go-wrapper/dynamodb"
+    "github.com/cnry/aws-sdk-go-wrapper/dynamodb"
 )
 
 func main() {
     // Create connection client
     cli := ddb.NewClient()
-    
+
     // Get dynamodb table
     table, err := cli.GetTable("MyDynamoTable")
     if err != nil {
         panic("error on loading dynamodb table")
     }
-    
+
     // Create new dynamodb item (row on RDBMS)
     item := dynamodb.NewItem()
     item.AddAttribute("user_id", 999)
     item.AddAttribute("status", 1)
-    
+
     // Add item to the wait list.
     table.AddItem(item)
-    
+
     item2 := dynamodb.NewItem()
     item.AddAttribute("user_id", 1000)
     item.AddAttribute("status", 2)
-    item.AddConditionEQ("status", 3) // Add condition for write 
+    item.AddConditionEQ("status", 3) // Add condition for write
     table.AddItem(item2)
-    
+
     // write all
     cli.PutAll()
 }
@@ -70,7 +70,7 @@ import(
     "os"
 
     // import this
-    "github.com/evalphobia/aws-sdk-go-wrapper/s3"
+    "github.com/cnry/aws-sdk-go-wrapper/s3"
 )
 
 func main(){
@@ -79,7 +79,7 @@ func main(){
 
     // upload file
     var file *os.File
-    file = getFile() // dummy code. this expects return data of "*os.File", like from POST form. 
+    file = getFile() // dummy code. this expects return data of "*os.File", like from POST form.
     s3obj := s3.NewS3Object(file)
     bucket.AddObject(s3obj, "/foo/bar/new_file")
     bucket.Put()

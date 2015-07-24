@@ -3,7 +3,7 @@
 package s3
 
 import (
-	"github.com/evalphobia/aws-sdk-go-wrapper/log"
+	"github.com/cnry/aws-sdk-go-wrapper/log"
 
 	"bytes"
 	"errors"

@@ -7,7 +7,7 @@ import (
 
 	AWS "github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/credentials"
-	"github.com/evalphobia/aws-sdk-go-wrapper/config"
+	"github.com/cnry/aws-sdk-go-wrapper/config"
 )
 
 const (

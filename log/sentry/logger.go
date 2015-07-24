@@ -1,15 +1,15 @@
 /*
 	for logging to sentry
 	use like this
-		import "github.com/evalphobia/aws-sdk-go-wrapper/"
-		import _ "github.com/evalphobia/aws-sdk-go-wrapper/log/sentry"
+		import "github.com/cnry/aws-sdk-go-wrapper/"
+		import _ "github.com/cnry/aws-sdk-go-wrapper/log/sentry"
 */
 
 package sentry
 
 import (
-	LOG "github.com/evalphobia/aws-sdk-go-wrapper/log"
-	Sentry "github.com/evalphobia/go-sentry-logger"
+	LOG "github.com/cnry/aws-sdk-go-wrapper/log"
+	Sentry "github.com/cnry/go-sentry-logger"
 )
 
 // override loggers in initialize

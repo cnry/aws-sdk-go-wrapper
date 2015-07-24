@@ -5,8 +5,8 @@ package s3
 import (
 	SDK "github.com/aws/aws-sdk-go/service/s3"
 
-	"github.com/evalphobia/aws-sdk-go-wrapper/auth"
-	"github.com/evalphobia/aws-sdk-go-wrapper/config"
+	"github.com/cnry/aws-sdk-go-wrapper/auth"
+	"github.com/cnry/aws-sdk-go-wrapper/config"
 )
 
 const (

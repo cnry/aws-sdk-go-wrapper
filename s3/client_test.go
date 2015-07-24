@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	_ "github.com/evalphobia/aws-sdk-go-wrapper/config/json"
+	_ "github.com/cnry/aws-sdk-go-wrapper/config/json"
 )
 
 func setTestEnv() {

@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/evalphobia/aws-sdk-go-wrapper/config"
-	_ "github.com/evalphobia/aws-sdk-go-wrapper/config/json"
+	"github.com/cnry/aws-sdk-go-wrapper/config"
+	_ "github.com/cnry/aws-sdk-go-wrapper/config/json"
 )
 
 type testConfig struct {

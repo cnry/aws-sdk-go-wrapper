@@ -6,7 +6,7 @@ import (
 	SDK "github.com/aws/aws-sdk-go/service/dynamodb"
 
 	"errors"
-	"github.com/evalphobia/aws-sdk-go-wrapper/log"
+	"github.com/cnry/aws-sdk-go-wrapper/log"
 	"strings"
 )
 

@@ -1,9 +1,9 @@
 package json
 
 import (
-	loader "github.com/evalphobia/go-config-loader"
+	loader "github.com/cnry/go-config-loader"
 
-	"github.com/evalphobia/aws-sdk-go-wrapper/config"
+	"github.com/cnry/aws-sdk-go-wrapper/config"
 )
 
 const (
